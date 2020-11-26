@@ -152,18 +152,22 @@ do
 	echo 'you can also enter "q" to quit'
 	read ANSWER
 	case $ANSWER in
+
 		1)
 		echo "the answer of question 1 is 3"
 		sleep 3
 		;;
+
 		2)
 		echo "the answer of question 2 is 5"
 		sleep 3
 		;;
+
 		3)
 		echo "the answer of question 3 is 10"
 		sleep 3
 		;;
+
 		q)
 		echo "quitting in 3 seconds"
 		sleep 1
@@ -172,8 +176,12 @@ do
 		echo "quitting in 1 seconds"
 		sleep 1
 		QUIT=yes
+		;;
+
 		*)
 		echo "invalid input"
+		in
+		;;
 	esac
 done
-		;;
+	
